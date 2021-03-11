@@ -1,0 +1,21 @@
+// this styles index should only contain imports of libraries and base styles.
+// styles for particular components should be included directly from the component.
+
+@import 'base-styles/variables'; // variables - include these wherever they are needed
+@import 'base-styles/base'; // body, typography, basic elements
+
+.initial-list,
+.confirmed-list {
+  border: 1px dashed #000;
+  padding: 20px;
+  margin-top: 20px;
+  max-width: 200px;
+
+}
+
+.adv {
+  border: 1px dashed #000;
+  padding: 20px;
+  margin-top: 50px;
+  width: 200px;
+}

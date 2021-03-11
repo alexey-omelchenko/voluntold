@@ -1,0 +1,8 @@
+{
+  "catalyst-frontend": {
+    "name": "voluntold",
+    "projectType": "react",
+    "newFolder": true,
+    "ignoreNewFolderSettings": true
+  }
+}
