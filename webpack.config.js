@@ -73,18 +73,17 @@ module.exports = {
     ],
   },
 
-  plugins: isDev
-    ? [
-        new HtmlWebpackPlugin({
-          template: './src/index.html',
-          hash: true,
-        }),
-        new StyleLintPlugin({
-          context: path.resolve(__dirname, 'src'),
-          files: '**/*.s?(a|c)ss',
-        }),
-      ]
-    : [new MiniCssExtractPlugin()],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      hash: true,
+    }),
+    new StyleLintPlugin({
+      context: path.resolve(__dirname, 'src'),
+      files: '**/*.s?(a|c)ss',
+    }),
+    new MiniCssExtractPlugin(),
+  ],
   resolve: {
     extensions: ['.js', '.ts', '.jsx', '.tsx', '.json', '.scss'],
 
